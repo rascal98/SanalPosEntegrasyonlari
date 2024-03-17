@@ -1,0 +1,372 @@
+.ustbosluk {
+margin-top: 50px;
+}
+
+/*/------------renkler------------/*/
+
+/*.background {
+	background-color: #ef7f1a !important;
+	border-color: #ef7f1a !important;
+	color: white !important;
+}
+.background a{
+	background-color: #ef7f1a !important;
+	border-color: #ef7f1a !important;
+	color: white !important;
+}
+.background:hover{
+    background-color: #e0771a !important;
+    border-color: #e0771a !important;
+    color: white !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #ef7f1a;
+}
+.taksit input[type="radio"]:hover + label {
+  background: #f5f5f5;
+  color: black;
+}
+.taksit input[type="radio"]:checked + label {
+    background:  #ef7f1a;
+    color: white;
+}*/
+
+/*/------------renkler------------/*/
+
+.step {
+	padding-bottom: 30px;
+}
+.basliktxt {
+	padding: 15px 0px;
+	border-bottom: solid 1px #e0e0e0;
+	margin-bottom: 30px;
+	font-size: 20px;
+	font-weight: 600;
+}
+.odeme .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.8em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: #f7f7f7;
+    border:solid 1px #e0e0e0;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.kart-bilgileri .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.8em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #f5f5f5;
+    background-clip: padding-box;
+    border: #f7f7f7;
+    border: #f5f5f5;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.kart-bilgileri label{
+	font-size: 14px;
+	font-weight: 600;
+	color: #cacaca;
+}
+.odeme .table td, .table th {
+    /*padding: 10px 0px 10px 0px;*/
+    width: 60px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+}
+.axess {
+	background-color:#ffffdf;
+}
+.bonus {
+	background-color:#d7e4df;
+}
+.sepet {
+	background-color: #3e3e3e;
+	padding: 30px;
+}
+.sepet-baslik {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #c5c5c5;
+}
+.sepet .form-control {
+    display: block;
+    width: 100%;
+    height: calc(2em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #d0d0d0;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    background-color: #525252;
+    background-clip: padding-box;
+    border-radius: 0;
+    padding-right: 50px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.sepet .form-control::placeholder { /* Firefox, Chrome, Opera */ 
+    color:gray; 
+} 
+  
+.sepet .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: gray; 
+} 
+  
+.sepet .form-control::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: gray; 
+} 
+.odeme-onay {
+	margin-top: 20px;
+}
+.odeme-onay .btn-primary {
+    width: 100%;
+    border-radius: 0;
+    padding: 10px 0px;
+    font-weight: 700;
+}
+
+/*
+.taksit table td {
+	margin:0px;
+	padding: 0px;
+} 
+.taksit table td:hover {
+	background-color: red;
+} 
+.taksit table label:focus {
+	background-color: blue;
+} 
+.taksit .form-group {
+	margin:0px;
+	padding: 0px!important;
+} 
+.taksit .form-check {
+	width: 100%;
+    height: 100%;
+    line-height: 45px;
+} 
+.taksit .form-check-label{
+	width: 100%;
+}
+.taksit .form-check-input {
+    position: absolute;
+    margin-top: 17px;
+    margin-left: -1.25rem;
+}
+.taksit input {
+    opacity: 1;
+}*/
+.taksit table td {
+	margin:0px;
+	padding: 0px;
+} 
+.taksit input[type="radio"] {
+  display: none;
+}
+.taksit input[type="radio"]:not(:disabled) ~ label {
+  cursor: pointer;
+}
+.taksit input[type="radio"]:disabled ~ label {
+  color: #bcc2bf;
+  border-color: #bcc2bf;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.taksit label {
+  height: 100%;
+  display: block;
+  background: white;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0px;
+}
+.taksit p {
+  margin-bottom: 0px;
+  padding: 12px 0px;
+}
+.firma {
+	display: table;
+	width: 100%;
+	height: 215px;
+	margin-bottom: 20px;
+	background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+}
+.logo {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.nav-pills .nav-link, .nav-pills .show>.nav-link {
+    color: gray;
+}
+.sepet .form-control:focus {
+    color: #fff;
+    background-color:none;
+    border-color: #b5b5b5;
+    outline: 0;
+    box-shadow:none;
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow:none;
+    color: white;
+}
+.odeme-basarili {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+.odeme-icerik {
+    text-align: center;
+}
+.odeme-icerik h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+.odeme-icerik h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+.ony svg {
+    width: 120px;
+    padding: 20px 0px;
+}
+.secures img {
+    width: 200px;
+    padding-top: 20px;
+}
+.odeme-bg {
+    height: 72vh;
+    transform: translate(-50%, 0%);
+    background-color: #f7f7f7;
+    position: absolute;
+    top: 0;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    left: 50%;
+    width: 500px;
+    text-align: center;
+}
+.form_model {
+    margin-top: 20px
+}
+.form_model input.check1 {
+    position: absolute;
+    opacity: 0;
+}
+.form_model input.check1:checked + label svg path {
+    stroke-dashoffset: 0;
+}
+.form_model input.check1:focus + label {
+    transform: scale(1.03);
+}
+
+.form_model .check1 + label {
+    display: block;
+    border: 2px solid #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s ease;
+    margin-right: 15px;
+}
+.form_model .check1 + label:active {
+    transform: scale(1.05);
+    border-radius: 30px;
+
+}
+.form_model .check1 + label svg {
+    pointer-events: none;
+    width: 18px;
+    padding-left: 7px;
+}
+.form_model .check1 + label svg path {
+    fill: none;
+    stroke: #333;
+    stroke-width: 12px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 101;
+    transition: all 350ms cubic-bezier(1, 0, 0.37, 0.91);
+}
+
+.form-check-label a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #434343;
+    text-decoration-line: none;
+}
+.master_img {
+    width: 100%;
+    margin-top: 40px;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow:none
+}
+.header_title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin:auto
+}
+.footer_bg {
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px;
+}
+.header_bg {
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.taksit input[type="radio"]:hover + label {
+    background: #f5f5f5;
+    color: black;
+}
+
+.footer_title ul li {
+    margin: 10px 0px;
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer_title ul li a{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer_title ul li i{
+    margin-right: 10px;
+}
+
+@media (max-width: 575px) {
+    #scrollable {
+        position: relative!important;
+        width: 100%!important;
+        top: auto!important;
+        bottom: auto!important;
+    }
+}

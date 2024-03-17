@@ -1,0 +1,177 @@
+﻿@model posTest.ViewModels.OdemeViewModel
+@{
+    Layout = "~/Views/Shared/_BayiLayout.cshtml";
+}
+
+
+<!-- Quick stats boxes -->
+    <div class="row">
+        <div class="col-lg-3">
+            <!-- Members online -->
+            <div class="panel bg-success-400">
+                <div class="panel-body">
+                    <div class="heading-elements">
+                    </div>
+                    <h3 class="no-margin">@Model.odemeListesi.Count(x => x.Satis == true)</h3>
+                    Ödemeler
+                    <div class="text-muted text-size-small">@DateTime.Now</div>
+                </div>
+                <div class="container-fluid">
+                    <div id="members-online">
+                        <svg width="100%" height="50">
+                            <g>
+                                @{int i = 3;}
+                                @foreach (var item in Model.odemeListesi)
+                                {
+                                    decimal a = Convert.ToDecimal(@item.Tutar) / 90;
+                                    string[] dizi = a.ToString().Split(',');
+                                    int height = Convert.ToInt32(dizi[0]) + 3; //az tutardaki ödemeler sutun olarak görünmediğinden yüksekliği artırmak için
+                                    int y = 50 - height;
+                                    <rect class="d3-random-bars" width="6.722736625514403" data-id="@item.Id" x="@i" height="@height" y="@y" style="fill: rgba(255, 255, 255, 0.5);"></rect>
+                                    i += 10;
+                                }
+                            </g>
+                            @foreach (var item in Model.odemeListesi)
+                            {
+                                <div class="d3-tip n item-@item.Id">
+                                    <div class="text-center">
+                                        <h6 class="no-margin">@item.Tutar</h6>
+                                        <span class="text-size-small">TUTAR</span>
+                                        <div class="text-size-small">@item.Tarih</div>
+                                    </div>
+                                </div>
+                            }
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .d3-tip {
+                    display: none;
+                    top: 0;
+                    right: 11px;
+                    background-color: rgba(255, 255, 255, 0.5);
+                }
+
+                .my-2 {
+                    margin: 10px 0px;
+                }
+
+                .item_img {
+                    box-shadow: 0px 2px 3px rgba(0,0,0,.5);
+                    padding: 10px;
+                }
+
+                    .item_img img {
+                        margin: auto;
+                    }
+
+                .table tbody tr:first-child td:first-child {
+                    max-width: 44%;
+                    width: 44%;
+                    white-space: initial;
+                }
+            </style>
+            <!-- /members online -->
+        </div>
+        <div class="col-lg-3">
+            <!-- Current server load -->
+            <div class="panel bg-pink-400" style="height: 161px;">
+                <div class="panel-body">
+                    <div class="heading-elements">
+                    </div>
+                    <h3 class="no-margin">@Convert.ToDecimal(Model.odemeListesi.Where(x => x.Satis == true).Sum(x => Convert.ToDecimal(x.Tutar.Replace(".", ",")))) TL</h3>
+                    Toplam Tutar
+                    <div class="text-muted text-size-small">@DateTime.Now</div>
+                </div>
+                <div id="server-load">
+
+                </div>
+            </div>
+            <!-- /current server load -->
+        </div>
+        <div class="col-lg-3">
+            <!-- Today's revenue -->
+            <div class="panel bg-orange-400" style="height: 161px;">
+                <div class="panel-body">
+                    <div class="heading-elements">
+                    </div>
+                    <h3 class="no-margin">@Model.odemeIstekleriListesi.Count</h3>
+                    Bekleyen Ödemeler
+                    <div class="text-muted text-size-small">@DateTime.Now</div>
+                </div>
+                <div id="today-revenue"></div>
+            </div>
+            <!-- /today's revenue -->
+        </div>
+        <div class="col-lg-3">
+            <!-- Today's revenue -->
+            <div class="panel bg-teal-400" style="height: 161px;">
+                <div class="panel-body">
+                    <div class="heading-elements">
+                    </div>
+                    @if (!String.IsNullOrEmpty(Model.Secilen.EmailSunucuPort))
+                    {
+                        <h3 class="no-margin">100%</h3>
+                        <p style="margin: 0">Profilinizin Doluluk Oranı</p>
+                        <div class="text-muted text-size-small">@DateTime.Now</div>
+                    }
+                    else
+                    {
+                        <h3 class="no-margin">70%</h3>
+                        <p style="margin: 0">Profilinizin Doluluk Oranı</p>
+                        <div class="text-muted text-size-small">@DateTime.Now</div>
+                        <a href="/Firma/Ayarlar/@Model.Secilen.Id" style="color: #ffffff;font-size: 16px;">Mail sunucu bilgileriniz eksik.Doldurmak için tıklayınız..</a>
+                    }
+                </div>
+                <div id="today-revenue"></div>
+            </div>
+            <!-- /today's revenue -->
+        </div>
+    </div>
+    <!-- /quick stats boxes -->
+    <script>
+        $(".d3-random-bars").mouseenter(function () {
+            var id = $(this).data("id");
+            $(".item-" + id).css("display", "block");
+        });
+        $(".d3-random-bars").mouseleave(function () {
+            var id = $(this).data("id");
+            $(".item-" + id).css("display", "none");
+        });
+    </script>
+    <div class="col-sm-12 col-md-6">
+        <!-- Daily sales -->
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">Son Ödemeler</h6>
+            </div>
+            <div class="table-responsive">
+                <table class="table text-nowrap">
+                    <thead>
+                        <tr>
+                            <th>Firma</th>
+                            <th>Tarih</th>
+                            <th>Tutar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.odemeListesi.OrderByDescending(x => x.Id).Take(3))
+                        {
+                            <tr>
+                                <td>@item.FirmaUnvan</td>
+                                <td>@item.Tarih</td>
+                                <td>@item.Tutar TL <span class="badge bg-blue" style="float: right;">Yeni</span></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /daily sales -->
+    </div>
+    <div class="col-sm-12 col-md-6" style="text-align:center;">
+        <h5>Banka Bazında Ödemeler</h5>
+        @Html.Action("PastaGrafik", "BayiOdemeler")
+    </div>
+    

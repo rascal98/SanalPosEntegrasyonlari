@@ -1,0 +1,85 @@
+﻿@model posTest.Models.Firmalar
+@using System.Web.Configuration
+@{
+    ViewBag.Title = Model.FirmaAdi+ " Güvenli Ödeme Sayfası";
+    var resimYolu = WebConfigurationManager.AppSettings["resimYolu"];
+    var renkKodu = "";
+    if (!string.IsNullOrEmpty(Model.FirmaRenk))
+    {
+        renkKodu = Model.FirmaRenk;
+    }
+    else
+    {
+        renkKodu = "#dee2e6";
+    }
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .giris_bgg {
+        margin-top: 20%
+    }
+    .display-block {
+        display: block;
+    }
+     .btn-block{
+         background-color: @renkKodu;
+         color: #ffffff;
+    }
+    .btn-block:hover{
+        opacity: .8;
+        color: #ffffff;
+    }
+    @@media  (max-width:992px) {
+        .giris_bgg {
+            margin-top: 10%
+        }
+    }
+</style>
+<form role="form" action="/Login/GirisYap" method="post" enctype="multipart/form-data">
+    <div class="giris_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 offset-md-3">
+                    <div class="giris_bgg">
+                        <div class="giris_logo" style="text-align:center;">
+                            <img src="@resimYolu/@Model.Logo" class="img-fluid" />
+                        </div>
+                        <div class="panel panel-body login-form">
+                            <div class="text-center">
+                                <div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
+                                <h5 class="content-group">@Model.FirmaAdi Ödeme Sayfası Giriş<small class="display-block">E Posta Adresiniz ve Şifrenizi Giriniz.</small></h5>
+                            </div>
+
+                            <div class="form-group has-feedback has-feedback-left">
+                                <input type="text" class="form-control" name="KullaniciAdi" id="eposta" placeholder="EPosta Adresi" required="">
+                                <div class="form-control-feedback">
+                                    <i class="icon-user text-muted"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback has-feedback-left">
+                                <input type="password" class="form-control" name="Sifre" id="sifre" placeholder="Şifre" required="">
+                                <div class="form-control-feedback">
+                                    <i class="icon-lock2 text-muted"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" id="giris" class="btn btn-block">Giriş<i class="icon-circle-right2 position-right"></i></button>
+                            </div>
+                            @if (Model.UyeliksizOdeme == true)
+                            {
+                                <div class="form-group">
+                                    <a style="color: #ffffff" href="/Home/Uyeliksiz"> <div class="btn btn-block">Üyeliksiz Ödeme<i class="icon-circle-right2 position-right"></i></div></a>
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</form>
+

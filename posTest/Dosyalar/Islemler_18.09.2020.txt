@@ -1,0 +1,51 @@
+UnSuccess metodu çalıştı.orderid:1809202014124797 // 18.09.2020 14:13:36
+UnSuccess metodu çalıştı.Hata: ().orderid:1809202014124797 // 18.09.2020 14:13:41
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202014124797 // 18.09.2020 14:13:41
+UnSuccess metodu çalıştı.orderid:1809202014140710 // 18.09.2020 14:14:09
+UnSuccess metodu çalıştı.Hata: (-1).orderid:1809202014140710 // 18.09.2020 14:39:03
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202014140710 // 18.09.2020 14:39:03
+UnSuccess metodu çalıştı.orderid:1809202014465825 // 18.09.2020 14:47:04
+UnSuccess metodu çalıştı.Hata: (-1).orderid:1809202014465825 // 18.09.2020 14:51:02
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202014465825 // 18.09.2020 14:51:02
+UnSuccess metodu çalıştı.orderid:1809202014540297 // 18.09.2020 14:54:19
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız.orderid:1809202014540297 // 18.09.2020 14:55:13
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202014540297 // 18.09.2020 14:55:13
+UnSuccess metodu çalıştı.orderid:1809202014555305 // 18.09.2020 14:55:56
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız.orderid:1809202014555305 // 18.09.2020 14:56:02
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202014555305 // 18.09.2020 14:56:02
+UnSuccess metodu çalıştı.orderid:1809202014574977 // 18.09.2020 14:57:52
+UnSuccess metodu çalıştı.Hata: (-1)HASH Uyusmazligi.orderid:1809202014574977 // 18.09.2020 14:57:59
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202014574977 // 18.09.2020 14:57:59
+UnSuccess metodu çalıştı.orderid:1809202015014137 // 18.09.2020 15:02:35
+UnSuccess metodu çalıştı.Hata: (-1)HASH Uyusmazligi.orderid:1809202015014137 // 18.09.2020 15:02:59
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202015014137 // 18.09.2020 15:02:59
+UnSuccess metodu çalıştı.orderid:1809202015033577 // 18.09.2020 15:03:39
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız.orderid:1809202015033577 // 18.09.2020 15:03:50
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202015033577 // 18.09.2020 15:03:50
+UnSuccess metodu çalıştı.orderid:1809202015054497 // 18.09.2020 15:05:50
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız.orderid:1809202015054497 // 18.09.2020 15:08:04
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202015054497 // 18.09.2020 15:08:04
+UnSuccess metodu çalıştı.orderid:1809202015093304 // 18.09.2020 15:09:38
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız.orderid:1809202015093304 // 18.09.2020 15:09:43
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202015093304 // 18.09.2020 15:09:44
+UnSuccess metodu çalıştı.orderid:1809202015221047 // 18.09.2020 15:22:36
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız.orderid:1809202015221047 // 18.09.2020 15:23:21
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202015221047 // 18.09.2020 15:23:21
+UnSuccess metodu çalıştı.orderid:1809202015281113 // 18.09.2020 15:28:34
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız.orderid:1809202015281113 // 18.09.2020 15:28:39
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202015281113 // 18.09.2020 15:28:39
+UnSuccess metodu çalıştı.orderid:1809202015343421 // 18.09.2020 15:34:44
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız.orderid:1809202015343421 // 18.09.2020 15:34:55
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202015343421 // 18.09.2020 15:34:55
+UnSuccess metodu çalıştı.orderid:1809202015585167 // 18.09.2020 15:59:04
+UnSuccess metodu çalıştı.Hata: (-1)3D Secure Authorize Error.orderid:1809202015585167 // 18.09.2020 16:14:17
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202015585167 // 18.09.2020 16:14:17
+UnSuccess metodu çalıştı.orderid:1809202016154213 // 18.09.2020 16:15:47
+UnSuccess metodu çalıştı.Hata: (-1)Sistem hatası.orderid:1809202016154213 // 18.09.2020 16:16:33
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202016154213 // 18.09.2020 16:16:33
+UnSuccess metodu çalıştı.orderid:1809202016175039 // 18.09.2020 16:17:54
+UnSuccess metodu çalıştı.Hata: (-1)Sistem hatası.orderid:1809202016175039 // 18.09.2020 16:18:00
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202016175039 // 18.09.2020 16:18:00
+UnSuccess metodu çalıştı.orderid:1809202016451770 // 18.09.2020 16:45:25
+UnSuccess metodu çalıştı.Hata: (-1).orderid:1809202016451770 // 18.09.2020 16:45:38
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1809202016451770 // 18.09.2020 16:45:39

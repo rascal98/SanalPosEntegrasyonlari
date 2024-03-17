@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2cc62dd7a65840e1a988a416c7f7626d" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="OdemeSistemiModel.aspnet_Applications" Width="1.5" PointX="0.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.aspnet_Membership" Width="1.5" PointX="8.25" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.aspnet_Paths" Width="1.5" PointX="3" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.aspnet_PersonalizationAllUsers" Width="1.5" PointX="5.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.aspnet_PersonalizationPerUser" Width="1.5" PointX="5.25" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.aspnet_Profile" Width="1.5" PointX="5.25" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.aspnet_Roles" Width="1.5" PointX="3" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.aspnet_SchemaVersions" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.aspnet_Users" Width="1.5" PointX="3" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.aspnet_UsersInRoles" Width="1.5" PointX="8.25" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.aspnet_WebEvent_Events" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.Bankalar" Width="1.5" PointX="13.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.BankaParametreleri" Width="1.5" PointX="16" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.FirmaBankaBaglama" Width="1.5" PointX="16" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.FirmaKullaniciBaglama" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.Firmalar" Width="1.5" PointX="10.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.FirmaParametreleri" Width="1.5" PointX="18.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.FirmaPosBilgileri" Width="1.5" PointX="13" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.FirmaTaksitleri" Width="1.5" PointX="16" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.KartBinNumaralari" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.Loglar" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.OdemeIstekleri" Width="1.5" PointX="13" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.Odemeler" Width="1.5" PointX="13" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.Sozlesmeler" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.Uyeler" Width="1.5" PointX="13" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.vw_aspnet_Applications" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.vw_aspnet_MembershipUsers" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.vw_aspnet_Profiles" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.vw_aspnet_Roles" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.vw_aspnet_Users" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.vw_aspnet_UsersInRoles" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.vw_aspnet_WebPartState_Paths" Width="1.5" PointX="2.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.vw_aspnet_WebPartState_Shared" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.vw_aspnet_WebPartState_User" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Me__Appli__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Me__Appli__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Me__Appli__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Me__Appli__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pa__Appli__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pa__Appli__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pa__Appli__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pa__Appli__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Ro__Appli__02084FDA" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Ro__Appli__02FC7413" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Ro__Appli__03F0984C" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Ro__Appli__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__Appli__05D8E0BE" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__Appli__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__Appli__07C12930" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__Appli__08B54D69" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Me__UserI__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Me__UserI__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Me__UserI__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Me__UserI__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__PathI__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__PathI__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__PathI__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__PathI__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__PathI__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__PathI__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__PathI__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__PathI__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__UserI__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__UserI__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__UserI__7C4F7684" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pe__UserI__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pr__UserI__00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pr__UserI__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pr__UserI__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Pr__UserI__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__RoleI__09A971A2" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__RoleI__0A9D95DB" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__RoleI__0B91BA14" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__RoleI__0C85DE4D" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__UserI__0D7A0286" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__UserI__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__UserI__0F624AF8" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK__aspnet_Us__UserI__10566F31" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK_BankaParametreleri_Bankalar" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK_FirmaBankaBaglama_Bankalar" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK_FirmaTaksitleri_Bankalar" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK_FirmaBankaBaglama_Firmalar" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK_FirmaParametreleri_FirmaBankaBaglama" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK_FirmaPosBilgileri_Firmalar" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK_FirmaTaksitleri_Firmalar" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK_OdemeIstekleri_Firmalar" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK_Odemeler_Firmalar" ManuallyRouted="false" />
+        <AssociationConnector Association="OdemeSistemiModel.FK_Uyeler_Firmalar" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="OdemeSistemiModel.OdemeLog" Width="1.5" PointX="7.375" PointY="13.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

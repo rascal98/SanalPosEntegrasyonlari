@@ -1,0 +1,44 @@
+İş Bankası metodu sonlandı.Ödeme kaydedildi.Firma:29 // 22.09.2020 12:36:16
+Success metodu çalıştı.orderid:2209202012361601 // 22.09.2020 12:36:50
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:2209202012361601 // 22.09.2020 12:36:54
+UnSuccess metodu çalıştı.Catch çalıştı.orderid:2209202012361601 // 22.09.2020 12:37:15
+İş Bankası metodu sonlandı.Ödeme kaydedildi.Firma:29 // 22.09.2020 12:37:35
+UnSuccess metodu çalıştı.orderid:2209202012373499 // 22.09.2020 12:37:47
+UnSuccess metodu çalıştı.Hata: (7)-Sistem Hatası - .orderid:2209202012373499 // 22.09.2020 12:39:43
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:2209202012373499 // 22.09.2020 12:39:43
+İş Bankası metodu sonlandı.Ödeme kaydedildi.Firma:29 // 22.09.2020 14:55:22
+UnSuccess metodu çalıştı.orderid:2209202014552156 // 22.09.2020 14:56:12
+UnSuccess metodu çalıştı.Hata: (0)-Doğrulama Başarısız, 3-D Secure imzası geçersiz. - .orderid:2209202014552156 // 22.09.2020 14:56:31
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:2209202014552156 // 22.09.2020 14:56:31
+İş Bankası metodu sonlandı.Ödeme kaydedildi.Firma:29 // 22.09.2020 14:56:54
+UnSuccess metodu çalıştı.orderid:2209202014565429 // 22.09.2020 14:57:14
+UnSuccess metodu çalıştı.Hata: (0)-Doğrulama Başarısız, 3-D Secure imzası geçersiz. - .orderid:2209202014565429 // 22.09.2020 14:57:14
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:2209202014565429 // 22.09.2020 14:57:14
+İş Bankası metodu sonlandı.Ödeme kaydedildi.Firma:29 // 22.09.2020 14:58:46
+UnSuccess metodu çalıştı.orderid:2209202014584618 // 22.09.2020 14:59:01
+UnSuccess metodu çalıştı.Hata: (2) - Kredi karti numarasi gecerli formatta degil.-Kart Sahibi veya bankası sisteme kayıtlı değil - .orderid:2209202014584618 // 22.09.2020 14:59:06
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:2209202014584618 // 22.09.2020 14:59:07
+
+
+
+
+
+
+******************
+İş Bankası metodu çalıştı.Firma:29 // 22.09.2020 15:33:21
+İş Bankası metodu sonlandı.Ödeme kaydedildi.Firma:29 // 22.09.2020 15:33:45
+UnSuccess metodu çalıştı.orderid:2209202015333062 // 22.09.2020 15:33:58
+UnSuccess metodu çalıştı.Hata: (7) - Guvenlik Kodu hatali.-Sistem Hatası - .orderid:2209202015333062 // 22.09.2020 15:34:28
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:2209202015333062 // 22.09.2020 15:34:28
+
+
+
+
+
+
+******************
+İş Bankası metodu çalıştı.Firma:29 // 22.09.2020 16:11:40
+İş Bankası metodu sonlandı.Ödeme kaydedildi.Firma:29 // 22.09.2020 16:11:51
+UnSuccess metodu çalıştı.orderid:2209202016115072 // 22.09.2020 16:11:53
+UnSuccess metodu çalıştı.Hata: (7) - Guvenlik Kodu hatali.-Sistem Hatası - .orderid:2209202016115072 // 22.09.2020 16:11:53
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:2209202016115072 // 22.09.2020 16:11:54

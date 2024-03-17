@@ -1,0 +1,81 @@
+﻿@model posTest.ViewModels.OdemeViewModel
+@{
+    ViewBag.Title = "OdemeDetay";
+    Layout = null;
+    posTest.Models.Uyeler uye = Model.uyeListesi.FirstOrDefault(x => x.Id == Model.Odeme.UyeId);
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+<body onload="window.print()" style="font-family: Arial, Helvetica, sans-serif;">
+
+    <div style="width: 1000px; margin: 5px;">
+
+        <p style="color: #17a600;">
+
+        </p>
+        <fieldset style="max-width: 1000px; margin-bottom: 15px;">
+            <legend></legend>
+            <p style="font-weight:bold">
+            </p>
+            <div>
+                <p>
+                    <strong>@Model.Odeme.FirmaUnvan </strong> Firması kullanıcısı <strong>@Model.uyeListesi.FirstOrDefault(x => x.Id == Model.Odeme.UyeId).Adi</strong> tarafından, <strong>"KURUOĞLU KERESTECİLİK VE DIŞ. "</strong> Firmasına @Model.Odeme.Tarih tarihinde  yapılan <strong>@Model.Odeme.Tutar TL</strong> miktarındaki ödemenin detayları
+                </p>
+            </div>
+        </fieldset>
+
+        <fieldset style="max-width: 1000px; margin-bottom: 15px;">
+            <legend>Banka ve Kredi Kartı Bilgileri</legend>
+            <div>
+                <p>
+                    Aşagıda detayları listelenen işlem, <strong>@Model.Odeme.Hata.Replace("(","").Replace(")","")</strong> bankası kullanılarak yapılmıştır.
+                </p>
+                <p>
+                    <label style="float: left; padding-right: 5px;"><strong>Kart Üzerindeki İsim: </strong></label>
+                    <label style="float: left; padding-right: 65px;">@Model.Odeme.AdSoyad</label>
+                    <label style="float: left; padding-right: 5px;"><strong>E-Mail: </strong></label>
+                    <label style="float: left; padding-right: 65px;">@Model.Odeme.Email</label>
+                    <label style="float: left; padding-right: 5px;"><strong>Telefon: </strong></label>
+                    <label style="float: left; padding-right: 65px;"> @Model.Odeme.Telefon </label>
+                </p>
+
+   
+                <br />
+                <p>
+                    <label style="float: left; padding-right: 5px;"><strong>Müşteri Temsilcisi: </strong></label>
+                    <label style="float: left; padding-right: 65px;">@uye.Firmalar.FirmaAdi</label>
+                </p>
+            </div>
+        </fieldset>
+
+
+
+
+
+
+
+        <fieldset style="max-width: 1000px; margin-bottom: 15px;">
+            <legend>Diğer Detaylar</legend>
+            <div style="float: left">
+                <p>
+                    <label style="float: left; padding-right: 5px; width: 150px;"><strong>Taksit </strong></label>
+                    <label style="float: left; padding-right: 5px;">@Model.Odeme.Taksit</label>
+                </p>
+                <br />
+                <p>
+                    <label style="float: left; padding-right: 5px; width: 150px;"><strong>Tutar: </strong></label>
+                    <label style="float: left; padding-right: 5px;">@Model.Odeme.Tutar TL</label>
+                </p>
+                <br />
+            </div>
+        </fieldset>
+    </div>
+</body>
+
+</html>

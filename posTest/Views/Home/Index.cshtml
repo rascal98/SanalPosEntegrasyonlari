@@ -1,0 +1,604 @@
+﻿@using System.Web.Configuration
+@using posTest.Resources
+@model posTest.Models.CreditCardModel
+@{
+    ViewBag.Title = Model.firmaAd + " Güvenli Ödeme Sayfası";
+    var resimYolu = WebConfigurationManager.AppSettings["resimYolu"];
+
+    var renkKodu = "";
+    if (!string.IsNullOrEmpty(Model.renk))
+    {
+        renkKodu = Model.renk;
+    }
+    else
+    {
+        renkKodu = "#dee2e6";
+    }
+}
+
+
+<style>
+    /*/------------renkler------------/*/
+
+    .background {
+        background-color: @renkKodu !important;
+        border-color: @renkKodu !important;
+        color: #ffffff !important;
+    }
+    .background a{
+        background-color:@renkKodu !important;
+        border-color: @renkKodu !important;
+        color: #ffffff !important;
+    }
+    .background:hover{
+        background-color: @renkKodu !important;
+        border-color: @renkKodu !important;
+        color: #ffffff !important;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: #ffffff;
+        background-color:@renkKodu;
+    }
+
+    .taksit input[type="radio"]:checked + label {
+        background:  @renkKodu;
+        color: #ffffff;
+    }
+    .header_bg {
+        background-color:  @renkKodu;
+    }
+
+    .footer_bg {
+        background-color:  @renkKodu;
+    }
+    #scrollable .form_model{
+        display: block;
+    }
+    .check-bg {
+        display: inline-block;
+        width: 10%;
+    }
+    .check-bg2 {
+        display: inline-block;
+        width: 88%;
+    }
+
+/*/------------renkler------------/*/
+</style>
+
+<div class="header_bg">
+    <div class="container">
+        <div class="row">
+            <div class="header_title">
+                @Model.firmaAd @Resource.hosgeldiniz
+            </div>
+            <div>
+                <ul style="list-style-type:none;">
+                    @if (System.Web.HttpContext.Current.Session["Login"].ToString() != "bos")
+                    {
+                        <li style="display:block"><a href="/BayiOdemeler/Index" style="color: #ffffff"><i class="fas fa-calculator" style="margin-right: 8px"></i>İşlemler</a></li>
+                        <li style="display:block"><a href="/Login/CikisYap" style="color: #ffffff"><i class="fas fa-user" style="margin-right: 8px"></i>Çıkış Yap</a></li>
+                    }
+                    else
+                    {
+                        if (Model.uyeGirisi == true)
+                        {
+                            <li style="display:block"><a href="/Login/CikisYap" style="color: #ffffff"><i class="fas fa-user" style="margin-right: 8px"></i>@Resource.uyegirisiyap</a></li>
+                        }
+                    }
+                     <li><a style="color:#fff;" href="/Home/Index?lang=en">EN</a> <i style="color:#fff">/</i> <a style="color:#fff;" href="/Home/Index?lang=tr">TR</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<form class="form-horizontal" action="/Home/Index" enctype="multipart/form-data" method="post" onsubmit="return kontrol();">
+    @Html.AntiForgeryToken()
+    <div class="parent">
+        <div class="container">
+            <div class="odeme">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="nonscrolling-child-row">
+                            <div class="step">
+                                <div class="basliktxt">
+                                    @Resource.odeyenbilgileri
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="AdSoyad" placeholder="@Resource.adsoyad" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="Telefon" id="telefon" placeholder="@Resource.telefon" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="Firma" placeholder="@Resource.firmaunvani" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="Email" placeholder="@Resource.eposta" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="basliktxt">
+                                    @Resource.kredikartibilgileri
+                                </div>
+                                <div class="kart-bilgileri">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlFile1">@Resource.kartsahibi</label>
+                                                <input class="form-control" type="text" name="HolderName" placeholder="Ad Soyad" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlFile1">@Resource.kartnumarasi</label>
+                                                <input class="form-control" type="text" name="CardNumber" id="krediKart" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlFile1">@Resource.gecerliliktarihi</label>
+                                                <select name="ExpireMonth" class="form-control" required="">
+                                                    <option></option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                    <option value="05">05</option>
+                                                    <option value="06">06</option>
+                                                    <option value="07">07</option>
+                                                    <option value="08">08</option>
+                                                    <option value="09">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlFile1">@Resource.sonkullanimyili</label>
+                                                <select name="ExpireYear" class="form-control" required="">
+                                                    <option></option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                    <option value="2024">2024</option>
+                                                    <option value="2025">2025</option>
+                                                    <option value="2026">2026</option>
+                                                    <option value="2027">2027</option>
+                                                    <option value="2028">2028</option>
+                                                    <option value="2029">2029</option>
+                                                    <option value="2030">2030</option>
+                                                    <option value="2031">2031</option>
+                                                    <option value="2032">2032</option>
+                                                    <option value="2033">2033</option>
+                                                    <option value="2034">2034</option>
+                                                    <option value="2035">2035</option>
+                                                    <option value="2036">2036</option>
+                                                    <option value="2037">2037</option>
+                                                    <option value="2038">2038</option>
+                                                    <option value="2039">2039</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlFile1">Güvenlik Kodu</label>
+                                                <input class="form-control" type="text" name="CV2" placeholder="CVC" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="steps">
+                                <div class="basliktxt">
+                                    @Resource.odemesecenekleri
+                                </div>
+
+
+
+
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">@Resource.tekcekim</a>
+                                    </li>
+                                </ul>
+                                <div class="taksit">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                @foreach (var banka in Model.secilenBankalar)
+                                                {
+                                                    <th scope="col"><img src="@resimYolu/@banka.Logo" class="img-fluid" alt="@banka.BankaAdi"></th>
+                                                }
+                                                <th scope="col"><img src="@resimYolu/kart.png" class="img-fluid" alt="Diğer"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Tek Çekim</th>
+                                                @foreach (var banka in Model.secilenBankalar)
+                                                {
+                                                    <td>
+                                                        <input type="radio" id="control_@banka.Id" class="tektaksitsec" class="bankaRadioBtn" data-banka="@banka.BankaAdi" name="Taksit" value="1">
+                                                        <label for="control_@banka.Id">
+                                                            <p>1x <span class="tamTutar">0 TL</span></p>
+                                                        </label>
+                                                    </td>
+                                                }
+                                                <td>
+                                                    <input type="radio" id="control_13" class="tektaksitsec" class="bankaRadioBtn" data-banka="" name="Taksit" value="1">
+                                                    <label for="control_13">
+                                                        <p>1x <span class="tamTutar">0 TL</span></p>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">@Resource.taksitsecenekleri</a>
+                                    </li>
+                                </ul>
+                                <div class="taksit ">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Taksit Sayısı</th>
+                                                @foreach (var banka in Model.secilenBankalar)
+                                                {
+                                                    <th scope="col"><img src="@resimYolu/@banka.Logo" class="img-fluid" alt="@banka.BankaAdi"></th>
+                                                }
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var taksit in Model.secilenTaksitler.Select(p => p.Taksit).Distinct().OrderBy(x => Convert.ToInt32(x)))
+                                            {
+                                                <tr>
+                                                    <!-- Taksit Sayısı -->
+                                                    <th scope="row">@taksit</th>
+
+                                                    @foreach (var banka in Model.secilenBankalar)
+                                                    {
+                                                        <td>
+                                                            @if (Model.secilenTaksitler.Count(x => x.BankaId == banka.Id && x.Taksit == taksit) > 0)
+                                                            {
+                                                                <input type="radio" id="control_@taksit@banka.Id" name="Taksit" class="bankaRadioBtn" data-banka="@banka.BankaAdi" value="@taksit">
+                                                                <label for="control_@taksit@banka.Id">
+                                                                    <p>
+                                                                        @if (banka.Id == 9)
+                                                                        {
+                                                                            <span class="kampanya_ikon">
+                                                                                <i class="fas fa-certificate"></i>
+                                                                                <span> +2 </span>
+                                                                            </span>
+                                                                        }
+                                                                        @if (banka.Id == 21)
+                                                                        {
+                                                                            <span class="kampanya_ikon">
+                                                                                <i class="fas fa-certificate"></i>
+                                                                                <span> +2 </span>
+                                                                            </span>
+                                                                        }
+
+
+                                                                        @taksit x <span data-deger="@taksit" class="tutar_@taksit@banka.Id">0 TL</span>
+                                                                        <br />
+                                                                        <span class="tamTutar_@taksit@banka.Id"></span>
+                                                                    </p>
+                                                                </label>
+                                                            }
+                                                        </td>
+                                                    }
+                                                </tr>
+                                            }
+                                            <tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 scrolling-child-row">
+                        <div id="scrollable">
+                            <div class="firma">
+                                <div class="logo">
+                                    @if (!string.IsNullOrEmpty(Model.logo))
+                                    {
+                                        <img src="@resimYolu/@Model.logo" class="img-fluid" alt="">
+                                    }
+                                </div>
+                            </div>
+                            <div class="sepet">
+                                <div class="sepet-baslik">
+                                    @Resource.odemetutari
+                                </div>
+                                <div class="form-group" style="position: relative;">
+                                    <input class="form-control" type="text" value="@ViewBag.tutar" required="" id="para">
+                                    <img src="/img/lira.svg" class="img-fluid" alt="Responsive image" style="width: 15px; position: absolute; top: 23px; right: 18px;">
+                                </div>
+                            </div>
+
+                            <div class="form-check form-check-inline form_model">
+                                @foreach (var item in Model.sozlesmeler.Where(x => x.Sozlesme == true))
+                                {
+                                    <div class="check_bg">
+                                        @if (item.Sozlesme == true)
+                                        {
+                                            <div class="check-bg">
+                                                <input type="checkbox" class="check1" id="check_@item.Id" required="" />
+                                                <label for="check_@item.Id">
+                                                    <svg viewBox="0,0,50,50">
+                                                        <path d="M5 30 L 20 45 L 45 5"></path>
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                        }
+                                        <div class="check-bg2">
+                                            <label class="form-check-label" for="inlineCheckbox1">
+                                                <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg-@item.Id">
+                                                    @item.Baslik
+                                                    @if (item.Sozlesme == true)
+                                                    {
+                                                        <span> Okudum, kabul ettim</span>
+                                                    }
+                                                </button>
+                                            </label>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            <input class="form-control" type="hidden" name="Banka" id="bankaName">
+                            <div class="odeme-onay">
+                                <input type="submit" class="btn btn-primary background" id="ode" value="@Resource.odemeyionayla">
+                            </div>
+                            <div class="odeme-onay">
+                                <input type="button" class="btn btn-primary background" style="background-color: #8AD162 !important;border-color: #8AD162!important;" onclick="garantiPay()" value="GARANTİ PAY">
+                            </div>
+                            <div class="master_img">
+                                <img src="/img/secure.png" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @foreach (var item in Model.sozlesmeler)
+            {
+                <div class="modal fade bd-example-modal-lg-@item.Id" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            @Html.Raw(item.Icerik)
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</form>
+<div class="footer_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <div class="footer_title">
+                    <ul>
+                        @if (!String.IsNullOrEmpty(Model.adres))
+                        {
+                            <li><i class="fas fa-map-marker-alt"></i>@Model.adres</li>
+                        }
+                        @if (!String.IsNullOrEmpty(Model.telefon2))
+                        {
+                            <li><i class="fas fa-phone"></i><a href="tel:@Model.telefon2">@Model.telefon2</a></li>
+                        }
+                        @if (!String.IsNullOrEmpty(Model.webAdres))
+                        {
+                            <li><i class="fas fa-globe"></i><a href="@Model.webAdres" target="_blank">@Model.webAdres</a></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="footer_title">
+                    <ul>
+                        @foreach (var item in Model.sozlesmeler.Where(x => x.Sozlesme == false))
+                        {
+                            <li data-toggle="modal" data-target=".bd-example-modal-lg-@item.Id">@item.Baslik</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .footer-pos {
+        text-align: right;
+        color:#ffffff;
+    }
+    .footer-pos img {
+        width: 100px;
+            margin-left: 10px;
+
+    }
+    .footer-bottom{
+        background-color: @renkKodu;
+        padding: 10px;
+    }
+    .footer-bottom a:hover {
+    text-decoration: none;
+}
+</style>
+<div class="footer-bottom">
+    <div class="container">
+        <div class="footer_logo">
+            <a href="https://nettepos.com/" target="_blank">
+                <div class="footer-pos">
+                    Online Tahsilat'ın Güvenilir Adresi
+                    <img src="/img/poslogo.png" class="img-fluid" alt="Online Tahsilat" title="Online Tahsilat">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#para').maskMoney();
+        $("#krediKart").mask('0000-0000-0000-0000');
+        $("#telefon").mask('(000) 000 00 00');
+    });
+
+    function kontrol() {
+        if (para.value === "0,00") {
+            alert("Lütfen 0'dan farklı bi tutar giriniz");
+            return false;
+        } else {
+            if ($("input[name=Taksit]").val() == "1") {
+                para.onkeyup();
+                krediKart.onkeyup();
+                return false;
+            } else {
+                return true;
+            }
+        }
+    };
+const formatter = new Intl.NumberFormat('tr-TR', {
+        style: 'currency',
+        currency: 'TRY',
+        minimumFractionDigits: 2
+    })
+    var para = document.getElementById("para");
+    para.onkeyup = function (e) {
+
+        var a = parseFloat(para.value.replace(/\./g,"").replace(",","."));
+        $(".tamTutar").text(formatter.format(a)+ " TL "  );
+        $(".tektaksitsec").val("1_"+a);
+
+        @foreach (var item in Model.secilenTaksitler)
+        {
+              <text>
+        var taksit = $(".tutar_" + @item.Taksit@item.BankaId).data("deger");
+
+        if ("@item.Vade" !== null && "@item.Vade" !== "") {
+            a = parseFloat(para.value.replace(/\./g, "").replace(",", ".")) / taksit;
+            a = a * @item.Vade + a;
+            $(".tutar_" + @item.Taksit@item.BankaId).text(formatter.format(a) + " TL ");
+            $(".tamTutar_" + @item.Taksit@item.BankaId).text(formatter.format(a*@item.Taksit)+ " TL "  );
+            $("#control_" + @item.Taksit@item.BankaId).val(@item.Taksit+"_"+ a*@item.Taksit);
+        } else {
+            var a = parseFloat(para.value.replace(/\./g,"").replace(",","."));
+            $(".tutar_" + @item.Taksit@item.BankaId).text(formatter.format(a/taksit) + " TL " );
+            $(".tamTutar_" + @item.Taksit@item.BankaId).text(formatter.format(a) + " TL "  );
+            $("#control_" +  @item.Taksit@item.BankaId).val(@item.Taksit +"_"+a);
+        }
+
+        </text>
+        }
+    }
+
+    var krediKart = document.getElementById("krediKart");
+    krediKart.onkeyup = function (e) {
+
+        var kNumara = krediKart.value;
+        if (kNumara.length > 6) {
+            kNumara = kNumara.substring(0,7).replace("-", "");
+            var bankaId;
+            var bankaAdi;
+            $.ajax({
+                url: '/Home/KartKontrol/',
+                data: { kartNo: kNumara },
+                type: 'POST',
+                dataType: 'text',
+                success: function (data) {
+
+                    @foreach (var item in Model.secilenBankalar)
+               {
+                   <text>
+
+                    if ("@item.BankaAdi" === data.trim()) {
+
+                        bankaId = "@item.Id";
+                        bankaAdi = "@item.BankaAdi";
+                    }
+
+                    </text>
+               }
+                    if (bankaId !== "" && bankaId !== undefined) {
+                        $("#control_" + bankaId).prop("checked", true);
+                        $("input[name=Banka]").val(bankaAdi);
+                    } else {
+                        $("#control_13").prop("checked", true);
+                        $("input[name=Banka]").val("");
+                    }
+                }
+            });
+        }
+    }
+
+    function garantiPay() {
+        var tutar = para.value;
+        if (tutar === "" || tutar === "0,00") {
+            alert("Lütfen 0'dan farklı bi tutar giriniz");
+            return false;
+        }
+        var adsoyad = $("input[name=AdSoyad]").val();
+        if (adsoyad === "") {
+            alert("Lütfen Ad Soyad Alanını Doldurunuz");
+            return false;
+        }
+        var telefon = $("input[name=Telefon]").val();
+        if (telefon === "") {
+            alert("Lütfen Telefon Alanını Doldurunuz");
+            return false;
+        }
+        var firma = $("input[name=Firma]").val();
+        if (firma === "") {
+            alert("Lütfen Firma Alanını Doldurunuz");
+            return false;
+        }
+        var eposta = $("input[name=Email]").val();
+        if (eposta === "") {
+            alert("Lütfen Eposta Alanını Doldurunuz");
+            return false;
+        }
+        @foreach (var item in Model.sozlesmeler.Where(x => x.Sozlesme == true))
+       {
+           <text>
+        if (document.getElementById("check_@item.Id").checked == false) {
+            alert("Lütfen sözleşmeyi onaylayınız");
+            return false;
+        }
+        </text>
+       }
+        window.location.href="/Home/GarantiPay?tutar="+tutar+"&ad="+adsoyad+"&telefon="+telefon+"&firma="+firma+"&eposta="+eposta;
+    };
+
+        $(document).ready(function () {
+        $(".bankaRadioBtn").click(function () {
+            console.log("tiklandi")
+           var selected= $(this).data("banka");
+            $("#bankaName").val(selected);
+        })
+        })
+</script>

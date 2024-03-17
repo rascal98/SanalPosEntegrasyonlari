@@ -1,0 +1,49 @@
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:37 // 9.03.2021 16:24:05
+Garanti metodu çalıştı.İstek gönderildi.Firma:37 // 9.03.2021 16:24:05
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:37 // 9.03.2021 16:24:06
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:37 // 9.03.2021 16:25:25
+Garanti metodu çalıştı.İstek gönderildi.Firma:37 // 9.03.2021 16:25:25
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:37 // 9.03.2021 16:25:25
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:37 // 9.03.2021 17:14:36
+Garanti metodu çalıştı.İstek gönderildi.Firma:37 // 9.03.2021 17:14:36
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:37 // 9.03.2021 17:14:36
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:37 // 9.03.2021 17:16:33
+FinansBank metodu çalıştı.Hata oluştu.Nesne başvurusu bir nesnenin örneğine ayarlanmadı. //    konum: posTest.Controllers.HomeController.FinansBank() C:\Users\TEKNIK\Desktop\ODEME\GuncelOdeme\posTest\posTest\Controllers\HomeController.cs içinde: satır 1160 // 9.03.2021 17:17:00
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:37 // 9.03.2021 17:17:28
+Garanti metodu çalıştı.İstek gönderildi.Firma:37 // 9.03.2021 17:17:28
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:37 // 9.03.2021 17:17:28

@@ -1,0 +1,93 @@
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:29 // 19.09.2020 13:14:17
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:29 // 19.09.2020 13:18:55
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:29 // 19.09.2020 13:19:55
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:29 // 19.09.2020 13:22:50
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:29 // 19.09.2020 13:25:23
+UnSuccess metodu çalıştı.orderid:1909202013253444 // 19.09.2020 13:25:56
+UnSuccess metodu çalıştı.Hata: (-1)3D Secure Authorize Error - MR15.orderid:1909202013253444 // 19.09.2020 13:26:17
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1909202013253444 // 19.09.2020 13:26:21
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:29 // 19.09.2020 13:27:04
+UnSuccess metodu çalıştı.orderid:1909202013270404 // 19.09.2020 13:27:13
+UnSuccess metodu çalıştı.Hata: (-1)3D Secure Authorize Error - MR15.orderid:1909202013270404 // 19.09.2020 13:27:13
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1909202013270404 // 19.09.2020 13:27:13
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:29 // 19.09.2020 13:35:36
+Garanti metodu çalıştı.İstek gönderildi.Firma:29 // 19.09.2020 13:35:58
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:29 // 19.09.2020 13:36:22
+UnSuccess metodu çalıştı.orderid:1909202013354582 // 19.09.2020 13:36:31
+UnSuccess metodu çalıştı.Hata: (0)-Doğrulama Başarısız, 3-D Secure imzası geçersiz..orderid:1909202013354582 // 19.09.2020 13:40:49
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1909202013354582 // 19.09.2020 13:40:49
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:29 // 19.09.2020 13:43:38
+Garanti metodu çalıştı.İstek gönderildi.Firma:29 // 19.09.2020 13:43:38
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:29 // 19.09.2020 13:43:39
+UnSuccess metodu çalıştı.orderid:1909202013433895 // 19.09.2020 13:44:07
+UnSuccess metodu çalıştı.Hata: (1)Authenticated-Tam Doğrulama.orderid:1909202013433895 // 19.09.2020 13:47:33
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1909202013433895 // 19.09.2020 13:47:33
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:29 // 19.09.2020 13:48:45
+Garanti metodu çalıştı.İstek gönderildi.Firma:29 // 19.09.2020 13:48:45
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:29 // 19.09.2020 13:48:46
+UnSuccess metodu çalıştı.orderid:1909202013484582 // 19.09.2020 13:49:20
+UnSuccess metodu çalıştı.Hata: (1)Authenticated - Giriş yaptığınız değerleri kontrol ediniz-Tam Doğrulama.orderid:1909202013484582 // 19.09.2020 13:49:39
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1909202013484582 // 19.09.2020 13:49:39

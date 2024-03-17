@@ -1,0 +1,151 @@
+﻿@model posTest.ViewModels.OdemeViewModel
+@{
+    ViewBag.Title = "Liste";
+    Layout = "~/Views/Shared/_BayiLayout.cshtml";
+}
+
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <h5 class="panel-title">
+            Ödeme Listesi
+        </h5>
+        <div class="heading-elements">
+            <ul class="icons-list"></ul>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="input-daterange input-group" id="datepicker">
+            <div>Tarih filtresi</div>
+            <div class="inp-kps">
+                <form method="get" style="display:flex;">
+                    <input type="text" class="input-sm form-control" name="start" id="baslangic" placeholder="Başlangıç">
+                    <span class="input-group-addon">-</span>
+                    <input type="text" class="input-sm form-control" name="end" id="bitis" placeholder="Bitiş">
+                    <button class="btn btn-success" type="submit">Filtrele</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover" id="dev-table">
+            <thead>
+                <tr>
+                    <th>Ödemeyi Yapan Üye</th>
+                    <th>Firma Unvan</th>
+                    <th>Ad Soyad</th>
+                    <th>Telefon</th>
+                    <th>Email</th>
+                    <th>Tutar</th>
+                    <th>Taksit Sayısı</th>
+                    <th>Tarih</th>
+                    <th>Banka</th>
+                    <th>Detay</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model.odemeListesi.OrderByDescending(x => x.Id))
+                {
+                    if (item.Satis == true)
+                    {
+                        <tr class="siyah" style="color: green">
+                            <td>
+                                @if (item.UyeId != null)
+                                {
+                                    @Model.uyeListesi.FirstOrDefault(x => x.Id == item.UyeId).Adi
+                                }
+                            </td>
+                            <td>@item.FirmaUnvan</td>
+                            <td>@item.AdSoyad</td>
+                            <td>@item.Telefon</td>
+                            <td>@item.Email</td>
+                            <td>@item.Tutar TL</td>
+                            @if (!String.IsNullOrEmpty(item.Taksit) && item.Taksit != "" && item.Taksit != "00")
+                            {
+                                <td>@item.Taksit</td>
+                            }
+                            else
+                            {
+                                <td>Tek Çekim</td>
+                            }
+                            <td>@item.Tarih</td>
+                            <td>@item.Hata</td>
+                            <td><button class="btn btn-primary detay-btn" data-id="@item.Id">Detay</button></td>
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr class="siyah" style="color: red">
+                            <td>
+                                @if (item.UyeId != null)
+                                {
+                                    @Model.uyeListesi.FirstOrDefault(x => x.Id == item.UyeId).Adi
+                                }
+                            </td>
+                            <td>@item.FirmaUnvan</td>
+                            <td>@item.AdSoyad</td>
+                            <td>@item.Telefon</td>
+                            <td>@item.Email</td>
+                            <td>@item.Tutar</td>
+                            <td>@item.Tarih</td>
+                            <td><p>İptal / İade</p></td>
+
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="detay-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" id="detay-modal-content">
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $(".detay-btn").click(function () {
+
+        $.ajax({
+            method: "post",
+            url: "/BayiOdemeler/OdemeDetay",
+            data: { id: $(this).data("id") },
+            success: function (e) {
+                $("#detay-modal-content").html(e);
+                $("#detay-modal").modal("show");
+            }
+
+        })
+
+    })
+
+</script>
+<!--/arama-->
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script src="~/Content/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="~/Content/buttons.html5.min.js"></script>
+<script src="~/Content/buttons.print.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#dev-table').DataTable({
+            "responsive": true,
+            "language": {
+
+                "url": "https://cdn.datatables.net/plug-ins/1.10.16/i18n/Turkish.json" //Tr
+            },
+            paging: false,
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        });
+    });
+</script>

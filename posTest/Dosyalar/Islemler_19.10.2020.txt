@@ -1,0 +1,43 @@
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:29 // 19.10.2020 15:14:38
+Garanti metodu çalıştı.İstek gönderildi.Firma:29 // 19.10.2020 15:14:38
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:29 // 19.10.2020 15:14:38
+
+
+
+
+
+
+******************
+HalkBank metodu çalıştı.Firma:34 // 19.10.2020 17:06:57
+Halkbank metodu sonlandı.Ödeme kaydedildi.Firma:34 // 19.10.2020 17:06:58
+
+
+
+
+
+
+******************
+HalkBank metodu çalıştı.Firma:34 // 19.10.2020 17:10:11
+Halkbank metodu sonlandı.Ödeme kaydedildi.Firma:34 // 19.10.2020 17:10:11
+UnSuccess metodu çalıştı.orderid:1910202017101100 // 19.10.2020 17:10:32
+UnSuccess metodu çalıştı.Hata: (0)2:CARDHOLDER_NOT_FOUND-Doğrulama Başarısız, 3-D Secure imzası geçersiz. - .orderid:1910202017101100 // 19.10.2020 17:10:32
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1910202017101100 // 19.10.2020 17:10:32
+
+
+
+
+
+
+******************
+HalkBank metodu çalıştı.Firma:34 // 19.10.2020 17:16:29
+Halkbank metodu sonlandı.Ödeme kaydedildi.Firma:34 // 19.10.2020 17:16:29
+UnSuccess metodu çalıştı.orderid:1910202017162963 // 19.10.2020 17:16:43
+UnSuccess metodu çalıştı.Hata: (0)2:CARDHOLDER_NOT_FOUND-Doğrulama Başarısız, 3-D Secure imzası geçersiz. - .orderid:1910202017162963 // 19.10.2020 17:16:44
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1910202017162963 // 19.10.2020 17:16:44

@@ -1,0 +1,94 @@
+
+
+
+
+
+
+******************
+HalkBank metodu çalıştı.Firma:29 // 17.10.2020 13:42:50
+İş Bankası metodu sonlandı.Ödeme kaydedildi.Firma:29 // 17.10.2020 13:43:13
+
+
+
+
+
+
+******************
+HalkBank metodu çalıştı.Firma:29 // 17.10.2020 13:50:24
+Halkbank metodu sonlandı.Ödeme kaydedildi.Firma:29 // 17.10.2020 13:50:24
+UnSuccess metodu çalıştı.orderid:1710202013502450 // 17.10.2020 13:50:38
+UnSuccess metodu çalıştı.orderid:1710202013502450 // 17.10.2020 13:51:58ReturnOid=1710202013502450&TRANID=&PAResSyntaxOK=&callbackurl=http%3a%2f%2flocalhost%3a52245%2fHome%2fUnSuccess%3forderid%3d1710202013502450&islemtipi=Auth&lang=tr&merchantID=500300000&maskedCreditCard=5440+78**+****+6014&amount=0.04&sID=2&ACQBIN=543081&Ecom_Payment_Card_ExpDate_Year=2024&EXTRA.CARDBRAND=MASTERCARD&MaskedPan=544078***6014&acqStan=005621&EXTRA.CAVVRESULTCODE=3&clientIp=88.249.171.32&cardHolderName=asdads&iReqDetail=&okUrl=http%3a%2f%2flocalhost%3a52245%2fHome%2fSuccess%3forderid%3d1710202013502450&md=544078%3aED6069879F4C75633F977F58654608F4F24C118D319BD3728EB3D2B8DD41D7EB%3a4332%3a%23%23500300000&ProcReturnCode=10&payResults.dsId=2&vendorCode=&EXTRA.AVANSPUAN=000000008240&TransId=20291NyaC13921&EXTRA.TRXDATE=20201017+13%3a50%3a26&Ecom_Payment_Card_ExpDate_Month=03&storetype=3d_pay_hosting&EXTRA.ODUL=000000004531&iReqCode=&Response=Declined&SettleId=1669&mdErrorMsg=N-status%2fNot+enrolled+from+Directory+Server%3a+https%3a%2f%2fkatmai2.asseco-see.com.tr%2fmdpayacs3%2fvereq&ErrMsg=UNDEFINED+ERROR+CODE.&PAResVerified=&cavv=&digest=digest&HostRefNum=029113005621&callbackCall=true&AuthCode=&failUrl=http%3a%2f%2flocalhost%3a52245%2fHome%2fUnSuccess%3forderid%3d1710202013502450&cavvAlgorithm=&xid=hPu%2by2P1ronEkLw5hP6BsFThPqE%3d&encoding=ISO-8859-9&currency=949&oid=1710202013502450&mdStatus=2&dsId=2&eci=&version=2.0&EXTRA.CARDISSUER=&clientid=500300000&txstatus=N&_charset_=UTF-8&HASH=T66jhBenv7JjzeKPw4yMev7F6u4%3d&rnd=Div75i7nKhi9X51QhSJf&HASHPARAMS=clientid%3aoid%3aAuthCode%3aProcReturnCode%3aResponse%3amdStatus%3acavv%3aeci%3amd%3arnd%3a&HASHPARAMSVAL=500300000171020201350245010Declined2544078%3aED6069879F4C75633F977F58654608F4F24C118D319BD3728EB3D2B8DD41D7EB%3a4332%3a%23%23500300000Div75i7nKhi9X51QhSJf&countdown=1
+UnSuccess metodu çalıştı.Hata: (2) - UNDEFINED ERROR CODE. - -Kart Sahibi veya bankası sisteme kayıtlı değil - .orderid:1710202013502450 // 17.10.2020 13:51:59
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1710202013502450 // 17.10.2020 13:51:59
+
+
+
+
+
+
+******************
+HalkBank metodu çalıştı.Firma:29 // 17.10.2020 13:55:59
+Halkbank metodu sonlandı.Ödeme kaydedildi.Firma:29 // 17.10.2020 13:55:59
+UnSuccess metodu çalıştı.orderid:1710202013555928 // 17.10.2020 13:56:36
+UnSuccess metodu çalıştı.orderid:1710202013555928 // 17.10.2020 13:57:32TRANID=&PAResSyntaxOK=true&callbackurl=http%3a%2f%2flocalhost%3a52245%2fHome%2fUnSuccess%3forderid%3d1710202013555928&islemtipi=Auth&lang=tr&merchantID=500284598&maskedCreditCard=5440+78**+****+6014&amount=0.04&sID=2&ACQBIN=543081&Ecom_Payment_Card_ExpDate_Year=2024&MaskedPan=544078***6014&clientIp=88.249.171.32&cardHolderName=asdads&protocol=3DS1.0.2&iReqDetail=&okUrl=http%3a%2f%2flocalhost%3a52245%2fHome%2fSuccess%3forderid%3d1710202013555928&md=544078%3a3914DBAC90028E8A85D782925ED91C6F44A03CFB121755ABEDC0616CD0A0F0FC%3a4298%3a%23%23500284598&vendorCode=&paresTxStatus=N&signature=djWG2cx2Plr4%2b98Xvmv4%2b%2bkI3hLyH5KcdAhvFUvpMAXIj8EazP9avo%2fzp8mdab%2bp6imiVYBYh4jkq5cw02JtY0bUuo3mWh0MbRiDWIqtqMNgGnQntE7KxoublPqpWHyTuhyJS56Kc0GKJQK6yK1nEM11PTb7voZShSHMbu6%2fQhIgFJt6ohwDGPaRaAJgaB8ea4bZWzDp%2fZMsvmPQ5BCY%2fEd8KGek2%2b8ew%2bti5y8IMZSxofIKfg1oWdWlffm6qv7M%2fKRmZAJ4c3RrvrhvcicdbwxC5vTF8pPFY9iOiFXuT1%2bDQL8lSms%2bOET1dhRM4RCqf9RrR1RE2yeAyFlfAIWm1A%3d%3d&Ecom_Payment_Card_ExpDate_Month=03&storetype=3d_pay_hosting&iReqCode=&veresEnrolledStatus=Y&mdErrorMsg=Not+authenticated&PAResVerified=false&cavv=&digest=digest&callbackCall=true&failUrl=http%3a%2f%2flocalhost%3a52245%2fHome%2fUnSuccess%3forderid%3d1710202013555928&cavvAlgorithm=&xid=dPZXcDMoxXdRADGfaF2KBo%2fMvRo%3d&encoding=UTF-8&currency=949&oid=1710202013555928&mdStatus=0&dsId=2&eci=&version=4.0&clientid=500284598&_charset_=UTF-8&HASH=1RYofX3tH1zAxbMa8KxoyhVCjK8%3d&rnd=Y6vwjwhoKEhx9qXlQJHG&HASHPARAMS=clientid%3aoid%3amdStatus%3acavv%3aeci%3amd%3arnd%3a&HASHPARAMSVAL=50028459817102020135559280544078%3a3914DBAC90028E8A85D782925ED91C6F44A03CFB121755ABEDC0616CD0A0F0FC%3a4298%3a%23%23500284598Y6vwjwhoKEhx9qXlQJHG&countdown=1
+UnSuccess metodu çalıştı.Hata: (0)Not authenticated-Doğrulama Başarısız, 3-D Secure imzası geçersiz. - .orderid:1710202013555928 // 17.10.2020 13:57:32
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1710202013555928 // 17.10.2020 13:57:33
+
+
+
+
+
+
+******************
+HalkBank metodu çalıştı.Firma:29 // 17.10.2020 14:04:03
+Halkbank metodu sonlandı.Ödeme kaydedildi.Firma:29 // 17.10.2020 14:04:03
+Success metodu çalıştı.orderid:1710202014040366 // 17.10.2020 14:04:33
+Success metodu çalıştı.Secilen ödeme bulundu.orderid:1710202014040366 // 17.10.2020 14:04:33
+Success metodu çalıştı.Firmaya mail gönderildi.orderid:1710202014040366 // 17.10.2020 14:04:34
+Success metodu çalıştı.Müşteriye mail gönderildi.orderid:1710202014040366 // 17.10.2020 14:04:35
+
+
+
+
+
+
+******************
+HalkBank metodu çalıştı.Firma:29 // 17.10.2020 14:04:57
+Halkbank metodu sonlandı.Ödeme kaydedildi.Firma:29 // 17.10.2020 14:04:57
+
+
+
+
+
+
+******************
+İş Bankası metodu çalıştı.Firma:29 // 17.10.2020 14:16:01
+İş Bankası metodu sonlandı.Ödeme kaydedildi.Firma:29 // 17.10.2020 14:16:01
+UnSuccess metodu çalıştı.orderid:1710202014160149 // 17.10.2020 14:16:25
+UnSuccess metodu çalıştı.orderid:1710202014160149 // 17.10.2020 14:16:25
+UnSuccess metodu çalıştı.Hata: (0)Not authenticated-Doğrulama Başarısız, 3-D Secure imzası geçersiz. - .orderid:1710202014160149 // 17.10.2020 14:16:25
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1710202014160149 // 17.10.2020 14:16:25
+
+
+
+
+
+
+******************
+HalkBank metodu çalıştı.Firma:29 // 17.10.2020 15:22:56
+Halkbank metodu sonlandı.Ödeme kaydedildi.Firma:29 // 17.10.2020 15:22:56
+UnSuccess metodu çalıştı.orderid:1710202015225630 // 17.10.2020 15:24:00
+UnSuccess metodu çalıştı.Hata: () - .orderid:1710202015225630 // 17.10.2020 15:24:00
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1710202015225630 // 17.10.2020 15:24:00
+UnSuccess metodu çalıştı.orderid:1710202015225630 // 17.10.2020 15:24:36
+UnSuccess metodu çalıştı.Hata: () - .orderid:1710202015225630 // 17.10.2020 15:24:36
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1710202015225630 // 17.10.2020 15:24:36
+
+
+
+
+
+
+******************
+HalkBank metodu çalıştı.Firma:29 // 17.10.2020 15:25:10
+Halkbank metodu sonlandı.Ödeme kaydedildi.Firma:29 // 17.10.2020 15:25:10

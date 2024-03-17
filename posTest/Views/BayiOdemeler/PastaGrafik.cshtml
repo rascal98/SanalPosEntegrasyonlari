@@ -1,0 +1,30 @@
+﻿@using Newtonsoft.Json
+@model List<posTest.Controllers.BankaPasta>
+
+
+<script type="text/javascript" src="/Content/assets/js/plugins/visualization/c3/c3.min.js"></script>
+<script>
+    var dataModel = @Html.Raw(JsonConvert.SerializeObject(Model))
+        console.log(dataModel.map(a => a.Renk));
+    var dataModelBanka= []
+    dataModel.map(x => {
+        var b = [x.Banka +" "+ x.Tutar+"TL", parseInt(x.Tutar)]
+        dataModelBanka.push(b);
+    })
+    console.log(dataModelBanka)
+    $(function () {
+        var pie_chart = c3.generate({
+            bindto: '#c3-pie-chart',
+            size: { width: 350 },
+            color: {
+                pattern: dataModel.map(a => a.Renk)
+            },
+            data: {
+                columns:
+                    dataModelBanka
+                ,
+                type: 'pie'
+            }
+        });
+    })</script>
+<div class="display-inline-block" id="c3-pie-chart"></div>

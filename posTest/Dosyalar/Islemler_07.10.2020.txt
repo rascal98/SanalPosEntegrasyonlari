@@ -1,0 +1,31 @@
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:29 // 7.10.2020 14:40:11
+Garanti metodu çalıştı.İstek gönderildi.Firma:29 // 7.10.2020 14:40:11
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:29 // 7.10.2020 14:40:11
+UnSuccess metodu çalıştı.orderid:0710202014401146 // 7.10.2020 14:40:40
+UnSuccess metodu çalıştı.Hata: (1) - CustomerIPAddress field must contain a valid ip address-Tam Doğrulama - .orderid:0710202014401146 // 7.10.2020 14:42:52
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:0710202014401146 // 7.10.2020 14:42:52
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:29 // 7.10.2020 14:45:13
+Garanti metodu çalıştı.İstek gönderildi.Firma:29 // 7.10.2020 14:45:13
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:29 // 7.10.2020 14:45:13
+UnSuccess metodu çalıştı.orderid:0710202014451320 // 7.10.2020 14:45:17
+UnSuccess metodu çalıştı.orderid:0710202014451320 // 7.10.2020 14:45:24xid=6%2bMYp02GypzC7JBu1siCjUy%2b8XY%3d&mdstatus=0&mderrormessage=Not+authenticated&txnstatus=&eci=&cavv=&paressyntaxok=true&paresverified=false&version=4.0&ireqcode=&ireqdetail=&vendorcode=&cavvalgorithm=&md=yyQQC%2fQ15OIXZhu5UQCwJ8CKXDqFvW%2bqvmns3rW%2b9kMY4z16XeBqwmKbo0%2fLhLQ6BvZMFiupG15HQHAoXB%2f5ZBxliB0oR3v8PbI1ObcDTN3NIk7jVeb6ZjfRG2sdINYtKWC7yVag1fgsXiL4u6v5e9AqqsY88iBQ&terminalid=10214222&terminalid=10214222&oid=0710202014451320&authcode=&response=Error&errmsg=&hostmsg=&procreturncode=&transid=0710202014451320&hostrefnum=&rnd=OcuRmuvszbbxV0QuCDvX&hash=su%2bMKl1QK1XBMDe96Nibxms%2bt5o%3d&hashparams=clientid%3aoid%3aauthcode%3aprocreturncode%3aresponse%3amdstatus%3acavv%3aeci%3amd%3arnd%3a&hashparamsval=102142220710202014451320Error0yyQQC%2fQ15OIXZhu5UQCwJ8CKXDqFvW%2bqvmns3rW%2b9kMY4z16XeBqwmKbo0%2fLhLQ6BvZMFiupG15HQHAoXB%2f5ZBxliB0oR3v8PbI1ObcDTN3NIk7jVeb6ZjfRG2sdINYtKWC7yVag1fgsXiL4u6v5e9AqqsY88iBQOcuRmuvszbbxV0QuCDvX&clientid=10214222&MaskedPan=544078***6014&apiversion=v0.01&orderid=0710202014451320&txninstallmentcount=&terminaluserid=PROVAUT&secure3dhash=64734A02B2868AAC411ECA312A160C2F7052A12D&secure3dsecuritylevel=3D_PAY&txncurrencycode=949&errorurl=http%3a%2f%2flocalhost%3a52245%2fHome%2fUnSuccess%3forderid%3d0710202014451320&terminalmerchantid=1282140&mode=PROD&terminalprovuserid=PROVAUT&txnamount=444&successurl=http%3a%2f%2flocalhost%3a52245%2fHome%2fSuccess%3forderid%3d0710202014451320&txntype=sales&customeripaddress=%3a%3a1
+UnSuccess metodu çalıştı.Hata: (0) - -Doğrulama Başarısız, 3-D Secure imzası geçersiz. - .orderid:0710202014451320 // 7.10.2020 14:45:26
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:0710202014451320 // 7.10.2020 14:45:26
+UnSuccess metodu çalıştı.orderid:0710202015022429 // 7.10.2020 15:04:31
+UnSuccess metodu çalıştı.orderid:0710202015022429 // 7.10.2020 15:04:31xid=iacaRxaFiTprX0%2bPETgpEaQU7mY%3d&mdstatus=1&mderrormessage=Authenticated&txnstatus=&eci=02&cavv=jAEABwEIAwkGBQQICAYB3pKQOjQ%3d&paressyntaxok=true&paresverified=false&version=4.0&ireqcode=&ireqdetail=&vendorcode=&cavvalgorithm=3&md=dGhrrNfJ0ONvg8Ig9EvOkkGnl2%2bornmdXlwuV4KKkB%2fOwkH8QqXq14J%2fXqZhbUahizSy6zpYJ69wUTqbnvrDpxtyOSKs7wr2%2fUB77YUxhWIEozTofAo2hlhBDDjrT1rA8gz%2b23NhaNDkNsWwnaH5%2by8EREo81a6n&terminalid=10214222&terminalid=10214222&oid=0710202015022429&authcode=+&response=Declined&errmsg=ErrorId%3a+0809&hostmsg=SubMerchantID+alan%c4%b1nda+bayii+kodunun+g%c3%b6nderilmesi+zorunludur&procreturncode=92&transid=0710202015022429&hostrefnum=&rnd=%2b%2fguawYdZHW1uw5m3n%2b3&hash=x2o5NAVCaDszpoTCU5kWIsLS6ag%3d&hashparams=clientid%3aoid%3aauthcode%3aprocreturncode%3aresponse%3amdstatus%3acavv%3aeci%3amd%3arnd%3a&hashparamsval=102142220710202015022429+92Declined1jAEABwEIAwkGBQQICAYB3pKQOjQ%3d02dGhrrNfJ0ONvg8Ig9EvOkkGnl2%2bornmdXlwuV4KKkB%2fOwkH8QqXq14J%2fXqZhbUahizSy6zpYJ69wUTqbnvrDpxtyOSKs7wr2%2fUB77YUxhWIEozTofAo2hlhBDDjrT1rA8gz%2b23NhaNDkNsWwnaH5%2by8EREo81a6n%2b%2fguawYdZHW1uw5m3n%2b3&clientid=10214222&MaskedPan=544078***6014&apiversion=v0.01&orderid=0710202015022429&txninstallmentcount=&terminaluserid=PROVAUT&secure3dhash=B4DCA8A99392E8F42578B7EB4EF6E4C27E35E120&secure3dsecuritylevel=3D_PAY&txncurrencycode=949&errorurl=http%3a%2f%2flocalhost%3a52245%2fHome%2fUnSuccess%3forderid%3d0710202015022429&terminalmerchantid=1282140&mode=PROD&terminalprovuserid=PROVAUT&txnamount=100&successurl=http%3a%2f%2flocalhost%3a52245%2fHome%2fSuccess%3forderid%3d0710202015022429&txntype=sales&customeripaddress=88.249.171.32
+UnSuccess metodu çalıştı.Hata: (1) - ErrorId: 0809-Tam Doğrulama - .orderid:0710202015022429 // 7.10.2020 15:04:31
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:0710202015022429 // 7.10.2020 15:04:32

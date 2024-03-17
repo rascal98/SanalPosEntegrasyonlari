@@ -1,0 +1,135 @@
+
+
+
+
+
+
+******************
+Yapıkredi metodu çalıştı.FirmaId:29 // 20.11.2020 14:25:50
+Yapıkredi metodu 1. adım çalıştı.Sonuc: False FirmaId:29 // 20.11.2020 14:25:50
+Yapıkredi metodu parametreler.posnetData=.posnetData2=.digest=.FirmaId:29 // 20.11.2020 14:25:50
+Yapıkredi metodu çalıştı.Hata oluştu.Nesne başvurusu bir nesnenin örneğine ayarlanmadı. //    konum: posTest.Controllers.HomeController.YapiKredi() C:\Users\TEKNIK\Desktop\ODEME\GuncelOdeme\posTest\posTest\Controllers\HomeController.cs içinde: satır 453 // 20.11.2020 14:26:16
+
+
+
+
+
+
+******************
+Yapıkredi metodu çalıştı.FirmaId:29 // 20.11.2020 14:34:45
+Yapıkredi metodu 1. adım çalıştı.Sonuc: False FirmaId:29 // 20.11.2020 14:34:45
+Yapıkredi metodu parametreler.posnetData=.posnetData2=.digest=.FirmaId:29 // 20.11.2020 14:34:45
+Yapıkredi metodu sonu ödeme kaydedildi.FirmaId:29 // 20.11.2020 14:34:47
+
+
+
+
+
+
+******************
+Yapıkredi metodu çalıştı.FirmaId:29 // 20.11.2020 14:36:28
+Yapıkredi metodu 1. adım çalıştı.Sonuc: False FirmaId:29 // 20.11.2020 14:36:28
+Yapıkredi metodu parametreler.posnetData=.posnetData2=.digest=.FirmaId:29 // 20.11.2020 14:36:28
+Yapıkredi metodu sonu ödeme kaydedildi.FirmaId:29 // 20.11.2020 14:36:30
+
+
+
+
+
+
+******************
+Yapıkredi metodu çalıştı.FirmaId:29 // 20.11.2020 14:38:06
+
+
+
+
+
+
+******************
+Yapıkredi metodu çalıştı.FirmaId:34 // 20.11.2020 14:43:12
+Yapıkredi metodu 1. adım çalıştı.Sonuc: False FirmaId:34 // 20.11.2020 14:43:17
+Yapıkredi metodu parametreler.posnetData=.posnetData2=.digest=.FirmaId:34 // 20.11.2020 14:43:17
+Yapıkredi metodu sonu ödeme kaydedildi.FirmaId:34 // 20.11.2020 14:43:18
+
+
+
+
+
+
+******************
+Yapıkredi metodu çalıştı.FirmaId:34 // 20.11.2020 14:44:33
+Yapıkredi metodu 1. adım çalıştı.Sonuc: False FirmaId:34 // 20.11.2020 14:44:39
+Yapıkredi metodu parametreler.posnetData=.posnetData2=.digest=.FirmaId:34 // 20.11.2020 14:44:39
+Yapıkredi metodu sonu ödeme kaydedildi.FirmaId:34 // 20.11.2020 14:46:03
+
+
+
+
+
+
+******************
+Yapıkredi metodu çalıştı.FirmaId:34 // 20.11.2020 14:47:02
+Yapıkredi metodu 1. adım çalıştı.Sonuc: True FirmaId:34 // 20.11.2020 14:47:06
+Yapıkredi metodu parametreler.posnetData=35D0DC7EEDE2B27521439F98A98E727162B7ECF887664E3201904793A0719C96F8002B7404DB9C036AEE6B50A69C7986509C7696906414012FFB984A75DF8C097CD84CC42C9F4493825B581A56BCB4901DE38E4ED5F842949BBE67658DD83C4102DA58C163391E43B0F6C19B3CFF2351A8EC2D3B061A34A55B09F9A09388FF165F959E93ADB0FBAEB27AAD56222BB7924DBD1A14497BDAA1CBE7558D.posnetData2=2DE382DF6EAA8E1323F30DB4240957638062A80C5A02084DBBC38323136CF9D62A7F75DC97528932FC29885F6E53D4EF926CDAA0.digest=78F433EE9F2E6EC89AA7D70F0C6C542D.FirmaId:34 // 20.11.2020 14:47:06
+Yapıkredi metodu sonu ödeme kaydedildi.FirmaId:34 // 20.11.2020 14:47:15
+
+
+
+
+
+
+******************
+Yapıkredi metodu çalıştı.FirmaId:34 // 20.11.2020 15:58:37
+Yapıkredi metodu 1. adım çalıştı.Sonuc: True FirmaId:34 // 20.11.2020 15:58:41
+Yapıkredi metodu parametreler.posnetData=46D7826B30C517816126DA098FA1C343EEA6CF686D819C6AA6F7550B66CAC9004E512D5F498CA9B33D168A72D12D84F2A424B468E59C12D39D4538B9F86308A2FD86D7011720DC928BB046B7966F888CDDA0DF0E930810B0B0CF31CC424B4E40B0AA88F01AEA34DF0C73061BAF74ED701CA5EC9667686DA319CF039BA7C3246FDFB8E8B0D58F44C8335D142001ADE90F5E3301FBAD7CBCED36B81978.posnetData2=4A033CCB0CBEA491CF977810065CF9F64510447EC2B26897D67AE47ACF61B02F230FF3022D6D8B463F841F5BEBC7723A99350587.digest=38C887C0EAC66D23B6E5A3028AA0D5DA.FirmaId:34 // 20.11.2020 15:58:41
+Yapıkredi metodu sonu ödeme kaydedildi.FirmaId:34 // 20.11.2020 15:58:45
+YapıkrediSonuc metodu çalıştı.FirmaId:34 // 20.11.2020 15:58:52
+YapıkrediSonuc metodu 3. adım çalıştı.FirmaId:34 // 20.11.2020 15:59:14
+YapıkrediSonuc metodu 3. adım sonucu çalıştı.FirmaId:34 // 20.11.2020 15:59:26
+YapıkrediSonuc metodu 3. adım IcerikBaslangicIndex boş hatası çalıştı.FirmaId:34 // 20.11.2020 15:59:33
+
+
+
+
+
+
+******************
+Yapıkredi metodu çalıştı.FirmaId:34 // 20.11.2020 16:11:32
+Yapıkredi metodu 1. adım çalıştı.Sonuc: True FirmaId:34 // 20.11.2020 16:11:39
+Yapıkredi metodu parametreler.posnetData=D0B2869AF43C11AF05A55AAA2CBC15E4951513D1698D831FA75E62027A791A3D102C01504CC54AF9B9A87BB88B6089586985D109A242CEECE5841830C941F106A9A3AFF5E6E28983625606C94B06E372A0492AB00E2674ACB9F2C237405DD357469E988D74DD9FB0AE5BEAB4AEF5A82483ED6DD250D56370CF8EFF939C953DC77C41155348C0DA3EDC745F90CFE2FF32F7E5833F18C85017BB1EB3FF.posnetData2=DA9C7F762936FD20109A1466BDEC07EC03757EE5D91479D1CDA820C85D845C4E3D3B134AABC69A9D4B5D84792AD49381DA0B0D05.digest=1B22EB3E173D40FA59E0D829A51D187C.FirmaId:34 // 20.11.2020 16:11:39
+Yapıkredi metodu sonu ödeme kaydedildi.FirmaId:34 // 20.11.2020 16:11:41
+YapıkrediSonuc metodu çalıştı.FirmaId:34 // 20.11.2020 16:11:47
+YapıkrediSonuc metodu 3. adım çalıştı.FirmaId:34 // 20.11.2020 16:12:00
+YapıkrediSonuc metodu 3. adım sonucu çalıştı.FirmaId:34 // 20.11.2020 16:12:20
+
+
+
+
+
+
+******************
+Yapıkredi metodu çalıştı.FirmaId:34 // 20.11.2020 16:19:54
+Yapıkredi metodu 1. adım çalıştı.Sonuc: True FirmaId:34 // 20.11.2020 16:19:56
+Yapıkredi metodu parametreler.posnetData=F9FC80224C353D8AC1DA5D68C934CC4AF6AF7ABBFFC8E4EA1889E209D011371BD4DA6732267FAF62C568204DE28EA57D0F4E34352CC7B30247EFE7DB5124A0C30E5D1CD1C78BBD1597AEFFDEB22D05D668BB5EBDCF9349562114BFE0FACA07D4B73BFB2D4AC231061AF26850A2FDAEFC7A64A924A1A123F73C232E776BB6A5ADE9059821BDB10EBB5A03FEDCAE3B26E40D9B1105153CA78BA6A41698.posnetData2=8DCFB9E6721DEA440ED8AD4654FE0606F0BF48A6581C2D5BD57DF7CBDA8A61260A7BBAB708FD64E01F58DB933E6925D069A1F275.digest=FF4FF9E1DDECEEF640A697D41A3D0406.FirmaId:34 // 20.11.2020 16:19:56
+Yapıkredi metodu sonu ödeme kaydedildi.FirmaId:34 // 20.11.2020 16:19:57
+YapıkrediSonuc metodu çalıştı.FirmaId:34 // 20.11.2020 16:20:03
+YapıkrediSonuc metodu 3. adım çalıştı.FirmaId:34 // 20.11.2020 16:20:17
+YapıkrediSonuc metodu 3. adım sonucu çalıştı.FirmaId:34 // 20.11.2020 16:20:22
+
+
+
+
+
+
+******************
+Yapıkredi metodu çalıştı.FirmaId:34 // 20.11.2020 16:23:03
+Yapıkredi metodu 1. adım çalıştı.Sonuc: True FirmaId:34 // 20.11.2020 16:23:06
+Yapıkredi metodu parametreler.posnetData=ED5DFDD29A2EEFBE838F7D792F949B28AFCDED7D56D4D5A40A95665AF5BA61E2462FC39F742AD453DE7C32EF560C9DB6053DE5E615C1AEA7890E10F7EBAE87B70D3F0A7858B2FD9FD1BB7A1110CB32781748D8BA816AFCB33E01C9C0752BCCD2A3F85AF92643431C3C5E2F3D7564D99AEE1FA9319F577467D84085EFE5C9C1D5577AF75B1039470540D66E37B46E87327599EDAEBC4C6732D46EF96D.posnetData2=C81BBC5D64387D2B04713B55F09FA83AEA2B74649728C792CC21233FE2341B206AD9C4C8A76BB59C5FEA721992AA66BDF6546AE9.digest=490C17A5EADFCDA136DE66CB3EB77EAE.FirmaId:34 // 20.11.2020 16:23:06
+Yapıkredi metodu sonu ödeme kaydedildi.FirmaId:34 // 20.11.2020 16:23:07
+YapıkrediSonuc metodu çalıştı.FirmaId:34 // 20.11.2020 16:23:13
+YapıkrediSonuc metodu 3. adım çalıştı.FirmaId:34 // 20.11.2020 16:23:22
+YapıkrediSonuc metodu 3. adım sonucu çalıştı.FirmaId:34 // 20.11.2020 16:23:27
+YapıkrediSonuc metodu 3. adım IcerikBaslangicIndex boş hatası çalıştı.FirmaId:34////148 MID,TID,IP HATALI: 88.249.171.32 // 20.11.2020 16:23:44
+UnSuccess metodu çalıştı.orderid:20112020162303325044 // 20.11.2020 16:23:44
+UnSuccess metodu çalıştı.Hata: () - 3. adım tamamlanamadı..orderid:20112020162303325044 // 20.11.2020 16:23:44
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:20112020162303325044 // 20.11.2020 16:23:45

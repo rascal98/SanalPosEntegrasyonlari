@@ -1,0 +1,70 @@
+﻿@model posTest.ViewModels.OdemeViewModel
+@{
+    ViewBag.Title = "OdemeDetay";
+    Layout = null;
+}
+<link href="/Content/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="container-fluid">
+
+
+        <div class="row" style="margin-top:20px;">
+            <div class="col-md-6">
+                <div class="row">
+                    <legend>Başarılı İşlem</legend>
+                    <div class="col-md-6">
+                        <b>İşlem Tarihi</b>
+                    </div>
+                    <div class="col-md-6">
+                        @Model.Odeme.Tarih
+                    </div>
+                    @if (Model.Odeme.UyeId != null)
+                    {
+                        <div class="col-md-6"><b>Ödeyen Bayi/Müşteri</b></div>
+                        <div class="col-md-6">@Model.uyeListesi.FirstOrDefault(x => x.Id == Model.Odeme.UyeId).Adi</div>
+                    }
+                    <div class="col-md-6"><b>Firma Adı</b></div>
+                    <div class="col-md-6">
+                        @Model.Odeme.FirmaUnvan
+                    </div>
+                    <div class="col-md-6"><b>Üye İşyeri</b></div>
+                    <div class="col-md-6">@Model.uyeListesi.FirstOrDefault(x => x.Id == Model.Odeme.UyeId).Adres</div>
+                    <div class="col-md-6"><b>Tutar</b></div>
+                    <div class="col-md-6">@Model.Odeme.Tutar</div>
+                    <div class="col-md-6"><b>Taksit</b></div>
+                    <div class="col-md-6">@Model.Odeme.Taksit</div>
+                    <div class="col-md-6"><b>Banka</b></div>
+                    <div class="col-md-6">@Model.Odeme.Hata.Replace("(", "").Replace(")", "")</div>
+
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <legend>Kart Bilgileri</legend>
+                    <div class="col-md-6"><b>Kart Üzerindeki İsim</b></div>
+                    <div class="col-md-6">@Model.Odeme.AdSoyad</div>
+                    <div class="col-md-6"><b>Email</b></div>
+                    <div class="col-md-6">@Model.Odeme.Email</div>
+                    <div class="col-md-6"><b>Telefon</b></div>
+                    <div class="col-md-6">@Model.Odeme.Telefon</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="modal-footer">
+    <a  href="/BayiOdemeler/OdemeDetayPrint/@Model.Odeme.Id" class="btn btn-primary">Yazdır</a>
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+</div>
+

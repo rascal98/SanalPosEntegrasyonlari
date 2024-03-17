@@ -1,0 +1,100 @@
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:37 // 10.03.2021 09:44:39
+FinansBank metodu sonlandı.Ödeme kaydedildi.Firma:37 // 10.03.2021 09:46:03
+UnSuccess metodu çalıştı.orderid:1003202109450166 // 10.03.2021 09:46:11
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız - V034 - .orderid:1003202109450166 // 10.03.2021 09:46:11
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1003202109450166 // 10.03.2021 09:46:12
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:37 // 10.03.2021 09:50:46
+FinansBank metodu sonlandı.Ödeme kaydedildi.Firma:37 // 10.03.2021 09:50:47
+UnSuccess metodu çalıştı.orderid:1003202109504682 // 10.03.2021 09:51:41
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız - V034 - .orderid:1003202109504682 // 10.03.2021 09:51:41
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1003202109504682 // 10.03.2021 09:51:41
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:37 // 10.03.2021 10:53:26
+Garanti metodu çalıştı.İstek gönderildi.Firma:37 // 10.03.2021 10:53:26
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:37 // 10.03.2021 10:53:28
+UnSuccess metodu çalıştı.orderid:1003202110532669 // 10.03.2021 10:53:29
+UnSuccess metodu çalıştı.Hata: (7)Isyeri Kullanim Tipi Desteklenmiyor - -Sistem Hatası - .orderid:1003202110532669 // 10.03.2021 10:53:29
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1003202110532669 // 10.03.2021 10:53:29
+
+
+
+
+
+
+******************
+Garanti metodu çalıştı.Firma:37 // 10.03.2021 10:54:45
+Garanti metodu çalıştı.İstek gönderildi.Firma:37 // 10.03.2021 10:54:45
+Garanti metodu çalıştı.Ödeme kaydedildi.Firma:37 // 10.03.2021 10:54:45
+UnSuccess metodu çalıştı.orderid:1003202110544566 // 10.03.2021 10:55:09
+UnSuccess metodu çalıştı.Hata: (7)Isyeri Kullanim Tipi Desteklenmiyor - -Sistem Hatası - .orderid:1003202110544566 // 10.03.2021 10:56:19
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1003202110544566 // 10.03.2021 10:56:20
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:37 // 10.03.2021 11:03:23
+FinansBank metodu sonlandı.Ödeme kaydedildi.Firma:37 // 10.03.2021 11:03:24
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Hata oluştu.Nesne başvurusu bir nesnenin örneğine ayarlanmadı. //    konum: posTest.Controllers.HomeController.FinansBank() C:\Users\TEKNIK\Desktop\ODEME\GuncelOdeme\posTest\posTest\Controllers\HomeController.cs içinde: satır 1158 // 10.03.2021 11:05:19
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:37 // 10.03.2021 11:06:27
+FinansBank metodu sonlandı.Ödeme kaydedildi.Firma:37 // 10.03.2021 11:06:27
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:37 // 10.03.2021 11:10:10
+FinansBank metodu sonlandı.Ödeme kaydedildi.Firma:37 // 10.03.2021 11:10:11
+UnSuccess metodu çalıştı.orderid:1003202111101052 // 10.03.2021 11:10:28
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız - V034 - .orderid:1003202111101052 // 10.03.2021 11:10:28
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1003202111101052 // 10.03.2021 11:10:28
+UnSuccess metodu çalıştı.orderid:1003202111101052 // 10.03.2021 11:10:58
+UnSuccess metodu çalıştı.Hata: (-1)3D Kullanıcı Doğrulama Adımı Başarısız - V034 - .orderid:1003202111101052 // 10.03.2021 11:13:35
+UnSuccess metodu çalıştı.Secilen ödeme bulundu.orderid:1003202111101052 // 10.03.2021 11:13:35
+
+
+
+
+
+
+******************
+FinansBank metodu çalıştı.Firma:37 // 10.03.2021 17:07:46
+FinansBank metodu sonlandı.Ödeme kaydedildi.Firma:37 // 10.03.2021 17:07:47
